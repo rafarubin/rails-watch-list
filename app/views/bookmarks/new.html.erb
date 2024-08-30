@@ -1,0 +1,14 @@
+<h1>Create a New Bookmark</h1>
+
+<div>
+  <%= simple_form_for ([@list, @bookmark]) do |f| %>
+    <%= f.input :comment %>
+    <%= f.association :movie, prompt: "Select a movie" %>
+    <%= f.association :list, prompt: "Select a list"  %>
+    <%= f.submit "Create a new bookmark", class: "btn-primary" %>
+
+  <% end %>
+</div>
+<div>
+  <%= link_to "Back to the list", lists_path %>
+</div>
