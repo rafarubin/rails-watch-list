@@ -40,3 +40,5 @@ module RailsWatchList
     config.generators.system_tests = nil
   end
 end
+
+require 'cloudinary/helper'
